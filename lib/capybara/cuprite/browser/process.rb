@@ -30,7 +30,7 @@ module Capybara::Cuprite
         "disable-extensions" => nil,
         # Note: --no-sandbox is not needed if you properly setup a user in the container.
         # https://github.com/ebidel/lighthouse-ci/blob/master/builder/Dockerfile#L35-L40
-        # "no-sandbox" => nil,
+        "no-sandbox" => nil,
       }.freeze
 
       attr_reader :host, :port, :ws_url, :pid, :path, :options, :cmd
